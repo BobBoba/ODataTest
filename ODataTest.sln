@@ -8,9 +8,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{125A6E40-C90F-4E45-AC1A-A811A6270A68}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ODataTest", "src\ODataTest\ODataTest.xproj", "{B8647D7C-447D-44AB-875C-77856805EA50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{968D9626-09A7-47B2-8356-1BBCB023CEAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +25,10 @@ Global
 		{B8647D7C-447D-44AB-875C-77856805EA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8647D7C-447D-44AB-875C-77856805EA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8647D7C-447D-44AB-875C-77856805EA50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968D9626-09A7-47B2-8356-1BBCB023CEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968D9626-09A7-47B2-8356-1BBCB023CEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968D9626-09A7-47B2-8356-1BBCB023CEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968D9626-09A7-47B2-8356-1BBCB023CEAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

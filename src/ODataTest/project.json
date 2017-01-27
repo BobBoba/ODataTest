@@ -1,9 +1,9 @@
 ﻿{
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.1",
-      "type": "platform"
-    },
+    //  "Microsoft.NETCore.App": {
+    //    "version": "1.1.0",
+    //    "type": "platform"
+    //  },
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Routing": "1.0.1",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
@@ -14,7 +14,14 @@
     "Microsoft.Extensions.Logging": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
-    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    //"Microsoft.AspNet.OData": "6.0.0"
+    "Microsoft.AspNetCore.OData": "1.0.0-rtm-00015",
+    "Serilog": "2.4.0-dev-00760",
+    "Serilog.Extensions.Logging": "1.4.0-dev-10136",
+    "Serilog.Settings.Configuration": "2.2.0",
+    "Serilog.Sinks.Literate": "2.1.0-dev-00034",
+    "Serilog.Sinks.Seq": "3.1.2-dev-00100"
   },
 
   "tools": {
@@ -22,12 +29,13 @@
   },
 
   "frameworks": {
-    "netcoreapp1.0": {
-      "imports": [
-        "dotnet5.6",
-        "portable-net45+win8"
-      ]
-    }
+    "net452": {}
+    //"netcoreapp1.1": {
+    //  "imports": [
+    //    "dotnet5.6",
+    //    "portable-net45+win8"
+    //  ]
+    //}
   },
 
   "buildOptions": {
