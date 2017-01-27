@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData;
 using Microsoft.AspNetCore.OData.Extensions;
 using Microsoft.AspNetCore.OData.Routing.Conventions;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,60 +41,6 @@ namespace ODataTest.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-        }
-    }
-
-    [EnableQuery]
-    [Route("odata/[controller]")]
-    public class PeopleController : Controller
-    {
-        private readonly IDemoDataSources _dataSource;
-
-        public PeopleController(IDemoDataSources dataSource)
-        {
-            this._dataSource = dataSource;
-        }
-
-        [HttpGet]
-        public IQueryable<Person> Get()
-        {
-            return _dataSource.People;
-        }
-
-        [HttpGet("{id}")]
-        public Person Get(string id)
-        {
-            return _dataSource.People.Single(t => t.ID == id);
-        }
-
-        [HttpGet("{id}/Trips")]
-        public IQueryable<Trip> GetTripsForPerson(string id)
-        {
-            return _dataSource.People.Single(t => t.ID == id).Trips.AsQueryable();
-        }
-    }
-    
-    [EnableQuery]
-    [Route("odata/[controller]")]
-    public class TripsController : Controller
-    {
-        private readonly IDemoDataSources _dataSource;
-
-        public TripsController(IDemoDataSources dataSource)
-        {
-            _dataSource = dataSource;
-        }
-
-        [HttpGet]
-        public IQueryable<Trip> Get()
-        {
-            return _dataSource.Trips;
-        }
-
-        [HttpGet("{id}")]
-        public Trip Get(string id)
-        {
-            return _dataSource.Trips.Single(t => t.ID == id);
         }
     }
 }
